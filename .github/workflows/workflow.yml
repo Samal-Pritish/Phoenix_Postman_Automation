@@ -54,7 +54,7 @@ jobs:
         run: |
           newman run 'Phoenix-Inwarrenty-Flow.postman_collection.json' \
           -e 'Phoenix_QA.postman_environment.json' \
-          -r cli,htmlextra --reporter-html-export ./newman/index.html
+          -r cli,htmlextra --reporter-htmlextra-export ./newman/index.html
 
       # Archieve execution report
       - name: Archive execution report
