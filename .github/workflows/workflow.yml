@@ -52,7 +52,7 @@ jobs:
       # Run Postman collection from command line
       - name: Run postman collection from command line
         run: |
-          newman run 'Phoenix-Inwarrenty-Flow.postman_collection.json' -e 'QA.postman_environment.json' -r cli,htmlextra
+          newman run 'Phoenix-Inwarrenty-Flow.postman_collection.json' -e 'Phoenix_QA.postman_environment.json' -r cli,htmlextra
 
       # Archieve execution report
       - name: Archive execution report
